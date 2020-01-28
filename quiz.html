@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <title>YT/GS Quiz</title>
+    <meta expires="0"/>
+    <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate"/>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet"/>
+    <style>
+      div { font-family:'Roboto', sans-serif; font-weight:100; color:#282828; }
+      button { color:#ffffff; line-height:1.3; font-size:42pt; font-weight:700; background-color:#ff0000; border:10px solid #ffffff; border-radius:30px; } 
+      button:hover { color:#ff0000; background-color:#ffffff; border:10px solid #ff0000; } 
+      .hidden { display:none; }
+      .center { margin:auto; width:50% }
+      .vcenter { margin: 0; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+      .quarter { width:25%; }
+      .quarter div { font-family:'Roboto', sans-serif; font-size:36pt; font-weight:700; font-stretch:extra-expanded; padding-top:0.8em; }
+      .quarter { height:795px; width:484px; margin:auto; overflow:none; padding:14px; border:10px solid #ffffff; }
+      #qbox { height:462px; width:2147px; background-color:#ff0000; margin-top:150px; margin-bottom:62px }
+      #posed { font-family:'Roboto', sans-serif; font-size:110pt; font-weight:700; font-stretch:extra-expanded; color:#ffffff; }
+      .roboto { font-family:'Roboto', sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div style="width:3000px;background-color:#ffffff">
+      <div style="height:204px; box-shadow: 0 8px 4px -2px #868686">
+        <div style="display:flex">
+          <div style="width:375px"><img src="http://res.cloudinary.com/sbpt2mwo9/image/upload/v1568779295/projects/gsquiz/yt_logo_rgb_light.png" style="margin-top:64px; margin-left:3.5em; width:372px"/></div>
+          <div style="font-size:55pt; font-weight:100; width:2625px; text-align:right; margin-top:70px; margin-right:0.6em" class="roboto">Primetime Personality Quiz</div>
+        </div>
+      </div>
+      <div id="G1" style="padding-bottom:4em; width:3000px" class="panel">
+        <center>
+          <div style="font-size:70pt; margin-top:286px" class="roboto"><img src="http://res.cloudinary.com/sbpt2mwo9/image/upload/v1568779295/projects/gsquiz/YT-Lozenge.png" style="width:378px; margin-bottom:145px"/></div>
+          <div style="margin-bottom:30px">
+            <div style="font-size:116pt" class="roboto">Primetime Personality Quiz</div>
+          </div>
+          <div style="margin-bottom:150px">
+            <div style="font-size:38pt" class="roboto">Answer a few questions to get your Creator match!</div>
+          </div>
+          <button id="take_quiz" style="height:125px; width:260px; line-height:2.2; font-size:30pt; margin-bottom:64px" class="roboto">Start Quiz</button>
+        </center>
+      </div>
+      <div id="G2" style="display:none; padding-bottom:4em; width:3000px" class="panel">
+        <center>
+          <div style="padding-bottom:4em">
+            <div id="qbox" class="center">
+              <div id="posed" class="vcenter"></div>
+            </div>
+            <div style="display:flex; width:2147px; padding-bottom:0em" class="center">
+              <div id="qzia" ascii="a" class="quarter">
+                <center><img src="http://res.cloudinary.com/sbpt2mwo9/image/upload/v1568778376/projects/gsquiz/white.jpg" ascii="a"/>
+                  <div></div>
+                </center>
+              </div>
+              <div id="qzib" ascii="b" class="quarter">
+                <center><img src="http://res.cloudinary.com/sbpt2mwo9/image/upload/v1568778376/projects/gsquiz/white.jpg" ascii="b"/>
+                  <div></div>
+                </center>
+              </div>
+              <div id="qzic" ascii="c" class="quarter">
+                <center><img src="http://res.cloudinary.com/sbpt2mwo9/image/upload/v1568778376/projects/gsquiz/white.jpg" ascii="c"/>
+                  <div></div>
+                </center>
+              </div>
+              <div id="qzid" ascii="d" class="quarter">
+                <center><img src="http://res.cloudinary.com/sbpt2mwo9/image/upload/v1568778376/projects/gsquiz/white.jpg" ascii="d"/>
+                  <div></div>
+                </center>
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div id="G3" style="display:none; width:100%; padding-bottom:7em; padding-top:66px" class="panel">
+        <center>
+          <div style="font-size:48pt; margin-top:55px; line-height:2.2" class="roboto">The results are in! Your Creator match is</div>
+          <div style="height:182px; width:2047px; background-color:#ff0000; margin-bottom:59px">
+            <div id="creator" style="color:#ffffff; font-size:70pt; font-weight:700" class="roboto vcenter"></div>
+          </div>
+          <table style="width:2047px;margin-bottom:50px;border:3px solid #eeeeee;padding:3em">
+            <tr>
+              <td valign="top" width="30%"><img src="" style="height:694px; width:762px; border:0; overflow:none"/></td>
+              <td valign="top" style="text-align:left; padding-left:50px" class="roboto">
+                <div style="color:#ff0000; font-size:50pt; font-weight:700"><span id="subs"></span> Subscribers
+                  <p style="font-size:34pt;font-weight:100;color:#282828;line-height:1.7"></p>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <button id="retake" style="height:2.6em; width:6.0em; line-height:1.3; font-size:42pt; font-weight:700; margin-bottom:40px" class="roboto">Retake</button>
+          <div style="height:100px; width:2072px; background-color:#eeeeee">
+            <div style="font-size:40pt; font-weight:300" class="roboto vcenter">Primetime is now personal. Collect your Creator card match!</div>
+          </div>
+        </center>
+      </div>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script type="text/javascript" src="js/questions.js"></script>
+      <script type="text/javascript" src="js/quiz.js"></script>
+    </div>
+  </body>
+</html>
